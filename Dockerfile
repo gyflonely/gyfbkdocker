@@ -2,7 +2,6 @@ FROM golang:alpine as builder
 RUN apk add --update git
 RUN go get github.com/txthinking/brook/cli/brook
 
-
 FROM chenhw2/alpine:base
 LABEL MAINTAINER CHENHW2 <https://github.com/chenhw2>
 
